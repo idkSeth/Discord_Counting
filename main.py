@@ -127,7 +127,7 @@ async def set_channel(ctx):
             return
         else:
             helper.change_count_channel(str(ctx.message.guild.id), ctx.message.raw_channel_mentions[0])
-            await ctx.send(f"Changed counting channel from <#{prev}> to <#{ctx.message.raw_channel_mentions[0]}>")
+            await ctx.send(f"Set counting channel to <#{ctx.message.raw_channel_mentions[0]}>")
 
 
 @client.command()
